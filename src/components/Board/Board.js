@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Board.css'
-import getNewEasyBoardString from '../../utils/getRandomBoards.js'
+import { getNewEasyBoardString, getNewHardBoardString } from '../../utils/getRandomBoards.js'
 import solve from '../Solver/Solver.js'
 
 const Board = () => {
@@ -28,6 +28,7 @@ const Board = () => {
             </div>
             <div className='Buttons'>
                 <button onClick={() => setBoard(createBoard(getNewEasyBoardString()))}>New Easy Board</button>
+                <button onClick={() => setBoard(createBoard(getNewHardBoardString()))}>New Hard Board</button>
                 <button onClick={() => setBoard(solveBoard(board))}>Solve</button>
             </div>
         </>
