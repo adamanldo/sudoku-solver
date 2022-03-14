@@ -1,6 +1,6 @@
 .sudokuBoard {
     border: 4px solid;
-    display: inline-grid;
+    display: inline-block;
 }
 
 .row {
@@ -8,11 +8,12 @@
 }
 
 .cell {
+    vertical-align: top;
     width: 52px;
     height: 52px;
     outline: 1px solid;
-    display: inline-block;
     background-color: #fcfbf4;
+    display: inline-table;
     text-align: center;
     line-height: 52px;
     font-size: 30px;
