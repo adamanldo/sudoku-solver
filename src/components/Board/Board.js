@@ -18,7 +18,7 @@ const Board = () => {
         {board.map((row, rowIdx) => (
           <div key={`row-${rowIdx}`} className="row">
             {row.map((cellVal, cellIdx) => {
-              return <div key={`cell-${rowIdx}${cellIdx}`} className="cell">
+              return <div key={`cell-${rowIdx}${cellIdx}`} id={`cell-${rowIdx}${cellIdx}`} className="cell">
                 {/*if the board value is zero, display an empty space*/}
                 {displayBlankIfZero(cellVal)}
               </div>;
@@ -27,9 +27,9 @@ const Board = () => {
         ))}
       </div>
       <div>
-        <button onClick={() => setBoard(createBoard(getNewEasyBoardString()))}>New Easy Board</button>
-        <button onClick={() => setBoard(createBoard(getNewHardBoardString()))}>New Hard Board</button>
-        <button onClick={() => setBoard(solveBoard(board))}>Solve</button>
+        <button onClick={() => setBoard(createBoard(getNewEasyBoardString()))} class="boardButtons">New Easy Board</button>
+        <button onClick={() => setBoard(createBoard(getNewHardBoardString()))} class="boardButtons">New Hard Board</button>
+        <button onClick={() => setBoard(solveBoard(board))} class="boardButtons">Solve</button>
       </div>
     </>
   )

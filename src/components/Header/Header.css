@@ -1,9 +1,8 @@
 .Header {
-  min-height: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1vmax;
-  font-family: "Didot", serif;
+  font-size: 18px;
+  font-family: "Courier New", serif;
 }
