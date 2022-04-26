@@ -6,13 +6,6 @@
   background-color: var(--main-bg-color);
 }
 
-.aboutButton {
-  padding: 3px;
-  box-shadow: 3px 3px var(--shadow-color);
-  border: 1px solid black;
-  cursor: pointer;
-}
-
 :root {
   --main-bg-color: #94babd;
   --shadow-color: #4c47529e;
